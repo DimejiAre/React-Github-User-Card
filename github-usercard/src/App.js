@@ -39,13 +39,15 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App">
+      <div>
         <h2>GitHub UserCard</h2>
-        <MainUser setMainUser={this.setMainUser}
-        user={this.state.mainUser}/>
-        <Users setUsers={this.setUsers}
-        addCard={this.addCard}
-        users={this.state.users}/>
+        <div className="container">
+          <MainUser setMainUser={this.setMainUser}
+          user={this.state.mainUser}/>
+          <Users setUsers={this.setUsers}
+          addCard={this.addCard}
+          users={this.state.users}/>
+        </div>
       </div>
     );
   }
