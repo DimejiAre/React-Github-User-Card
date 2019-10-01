@@ -86,6 +86,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin: 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .header img {
   width: 150px;
   height: 150px;
@@ -138,8 +144,12 @@ h2 {
   height: 250px;
 }
 
-button {
+form {
+  margin-bottom: 20px;
+}
+
+/* button {
   position: absolute;
   top: 20px;
   right: 20px;
-}
+} */

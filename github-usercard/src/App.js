@@ -3,6 +3,7 @@ import Users from './components/Users';
 import MainUser from './components/MainUser';
 import axios from 'axios';
 import './App.css';
+import SearchForm from './components/SearchForm';
 
 class App extends React.Component {
   constructor(props){
@@ -42,8 +43,10 @@ class App extends React.Component {
       <div>
         <h2>GitHub UserCard</h2>
         <div className="container">
+          <SearchForm />
           <MainUser setMainUser={this.setMainUser}
           user={this.state.mainUser}/>
+          <h3>Followers</h3>
           <Users setUsers={this.setUsers}
           addCard={this.addCard}
           users={this.state.users}/>
